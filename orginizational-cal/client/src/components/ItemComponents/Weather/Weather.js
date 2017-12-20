@@ -2,7 +2,13 @@ import React, {Component} from "react";
 import "./Weather.css";
 import axios from "axios";
 
-class Weather extends Component {
+const Modal = ({ show, hide }) => (
+  <div style={{ display: show ? 'block' : 'none' }} className='weather-pnl pnl'>
+    <p> Your Weekly Weather Forecast  </p>
+  </div>
+)
+
+class Weather extends React.Component { 
   constructor() {
     super()
     this.state = {
@@ -33,8 +39,9 @@ class Weather extends Component {
         </div>
       </a>
 
-      <weatherModal className="weather-pnl pnl" show={this.state.displayModal} hide={this.handleModalDisplay}/>
-    </div>)
+      <Modal className="weather-pnl pnl" show={this.state.displayModal} hide={this.handleModalDisplay}/>
+    </div>
+    )
   }
 }
 
