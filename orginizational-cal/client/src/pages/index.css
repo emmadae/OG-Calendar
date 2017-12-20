@@ -2,7 +2,7 @@
 	background: white;
 	width:35%;
 	margin:12% auto;
-	height:350px;
+	height:100%;
 }
 
 .login-div h3{
@@ -58,6 +58,7 @@
 .login-div p{
 	text-align: center;
 	margin:3% auto;
+	margin-bottom:8%;
 }
 
 .login-div p .link{
