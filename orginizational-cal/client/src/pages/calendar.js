@@ -14,10 +14,10 @@ import CalendarMonth from "../components/CalendarMonth/CalendarMonth.js";
 
 class calendar extends Component {
   state = {
-    time: "hello kevin",
-    name: "Ummm",
-    weather: "Sunny :D",
-    email: "stockemail@gmail.com",
+    time: "John Doe",
+    name: "John Doe",
+    weather: "Sunny",
+    email: "johndoe@gmail.com",
     show:"show",
     hide:"hide",
     reminders: ["wake up", "gyme", "lunch", "meal prep"]
